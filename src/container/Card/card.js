@@ -10,6 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import "./card.css"
 import { Redirect, Link } from "react-router-dom"
 import axios from 'axios';
+import logo from "../images/placeholder.png"
 
 const useStyles = makeStyles({
   root: {
@@ -42,6 +43,7 @@ const MediaCard = () => {
       .then(rowData => {
         setBrends(rowData[0])
         setBrendLength(rowData[1])
+        console.log(logo)
       })
   }, []);
 
@@ -52,7 +54,7 @@ const MediaCard = () => {
                 <CardActionArea>
                   <CardMedia
                     className={classes.media}
-                    image={`${process.env.PUBLIC_URL}/images/${el.logo}`}
+                    image={logo}
                     title="Contemplative Reptile"
                   />
                   <CardContent className={classes.card}>
