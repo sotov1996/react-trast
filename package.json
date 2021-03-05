@@ -1,0 +1,73 @@
+{
+  "name": "my-app-trast",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.7.2",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
+    "cookies": "^0.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^2.7.4",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "gridfs-stream": "^1.1.1",
+    "i18n-abide": "^0.0.26",
+    "i18next": "^19.8.9",
+    "i18next-browser-languagedetector": "^6.0.1",
+    "i18next-http-backend": "^1.1.0",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.11.16",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "multer-gridfs-storage": "^4.2.0",
+    "nodemailer": "^6.4.18",
+    "nodemon": "^2.0.7",
+    "react-country-flag": "^2.3.0",
+    "react-i18next": "^11.8.7",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "recharts": "^2.0.6",
+    "google-map-react": "^2.1.9",
+    "web-vitals": "^1.1.0"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm run nodemon\" \"npm run react\"",
+    "react": "react-scripts start",
+    "nodemon": "nodemon server/index.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "start": "cd server && node index.js",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:4000"
+}

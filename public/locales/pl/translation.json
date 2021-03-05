@@ -1,0 +1,38 @@
+{
+    "title":"Hello",
+    "header": "Detergenty i preparaty czyszczące",
+    "menu": {
+        "main":"Główny",
+        "feedback":"Informacje zwrotne",
+        "contact":"Łączność",
+        "admin":"Administrator"
+    },
+    "contact": {
+        "contact":"KONTAKT",
+        "find":"ZNAJDŹ NAS",
+        "adress":"Adres",
+        "adress1":"Republika Białorusi, 224023, obwód brzeski, Brześć, ul. Moskwa, 332 / 3B-4v",
+        "hours":"Godziny otwarcia",
+        "hours1":"Poniedziałek - Piątek: 9:00 - 16:00"
+    },
+    "feedback": {
+        "name": "Opis kolejności",
+        "title": "Tytuł",
+        "description": "Opis",
+        "send": "Wyślij wiadomość",
+        "event": "Wiadomość wysłana"
+    },
+    "admin": {
+        "name":"Zaloguj się na swoje konto",
+        "login":"Zaloguj sie",
+        "password":"Hasło",
+        "signin": "Wejść"
+    },
+    "snackbar": {
+        "error": "Zły login lub hasło!",
+        "succes": "Sukces!"
+    },
+    "btn": {
+        "back": "Wrócić do"
+    }
+}

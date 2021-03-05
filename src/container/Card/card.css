@@ -1,0 +1,14 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+.card-container {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+    .description-card {
+        justify-content:space-around
+    }
+  }
