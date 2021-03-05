@@ -17,7 +17,7 @@ mongoose.connect("mongodb+srv://trast_app:8scIdjQCb5nhoexd@cluster0.zuy1s.mongod
 const port = process.env.PORT || 4000
 const DB_HOST = process.env.DB_HOST
 const app = express();
-app.use(express.static(path.join(__dirname + "/../public")));
+app.use(express.static("/../built"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors())
