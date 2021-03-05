@@ -69,5 +69,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://trast-nextjs.herokuapp.com"
+  "proxy": "https://localhost:4000"
 }
