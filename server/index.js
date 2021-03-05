@@ -6,6 +6,13 @@ const cors = require("cors")
 
 dotenv.config({ path: ".env" })
 
+mongoose.connect("mongodb+srv://trast_app:8scIdjQCb5nhoexd@cluster0.zuy1s.mongodb.net/trast", {
+  useFindAndModify: false,
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true
+})
+
 const port = process.env.PORT || 4000
 const DB_HOST = process.env.DB_HOST
 const app = express();
@@ -24,11 +31,5 @@ app.use("/api", require("./routes/product"))
       useCreateIndex: true 
     }
 )*/
-mongoose.connect("mongodb+srv://trast_app:8scIdjQCb5nhoexd@cluster0.zuy1s.mongodb.net/trast", {
-  useFindAndModify: false,
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useCreateIndex: true
-})
 
-app.listen(port, () => console.log("Connect port 4000"))
+app.listen(port, () => console.log(`Connect port ${port}`))
